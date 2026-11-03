@@ -1,4 +1,3 @@
-
 @use "../utilities/variables" as *;
 
 body {
@@ -6,7 +5,7 @@ body {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.6;
-    background-color: rgb(253, 243, 140);
+    background-color: $color-fondo;
 }
 
 ul {
@@ -19,7 +18,7 @@ a {
 }
 
 h1, h2 {
-    color: rgb(61, 85, 12);
+    color: $color-titulos;
 }
 
 h1 {

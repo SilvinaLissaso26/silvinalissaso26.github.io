@@ -1,15 +1,14 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
 
 /* ==========================================================================
     6. FOOTER Y REDES SOCIALES
    ========================================================================== */
 footer {
-    color: rgb(61, 85, 12);
+    color: $color-titulos;
     background-color: rgb(243, 195, 131);
     background-image: url("../img/fondo2.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    @include flex-col(center, 2rem);
     padding: 2rem 0;
 
     ul {
@@ -36,3 +35,4 @@ footer {
         }
     }
 }
+

@@ -1,9 +1,8 @@
+@use "../utilities/mixins" as *;
+@use "../utilities/variables" as *;
 
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    @include flex-col(center, 1rem);
     padding: 2rem;
 
     img {
@@ -17,10 +16,7 @@ main {
 }
 
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    @include flex-col(center, 2rem);
 }
 
 /* Carrusel */
@@ -45,7 +41,7 @@ section {
             padding: 8px 15px;
 
             h5 {
-                color: rgb(253, 243, 140);
+                color: $color-fondo;
             }
 
             p {
@@ -54,20 +50,19 @@ section {
         }
     }
 }
+
 figure {
     margin: 1.5rem auto;
     width: 100%;
     max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-col(center, 0);
 
     img {
         width: 100%;
         max-width: 100%;
         height: auto;
         display: block;
-        border-radius: 8px; /* opcional, para que quede prolijo */
+        border-radius: 8px;
     }
 
     figcaption {

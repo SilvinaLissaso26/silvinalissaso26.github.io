@@ -27,6 +27,7 @@
 }
 
 .tarjeta-index {
+    @extend %borde-redondeado;
     background-color: rgb(243, 195, 131);
     @include flex-col(center, 1rem);
     font-size: 1.2rem;
@@ -36,7 +37,7 @@
         transform: translateY(-5px);
         box-shadow: 0 8px 18px rgba(61, 85, 12, 0.25);
     }
-
+    
     img {
         width: 100%;
         height: auto;
